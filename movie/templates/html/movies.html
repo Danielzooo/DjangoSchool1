@@ -25,7 +25,7 @@
 <body>
 
     <div id="page" class="page"><!-- mian-content -->
-        <div class="main-banner bg bg1" id="home" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url(&quot;bundles/single-post-pic.jpg&quot;);">
+        <div class="main-banner bg bg1" id="home" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url('{% static 'images/single-post-pic.jpg' %}');">
             <!-- header -->
             <header class="header">
                 <div class="container-fluid px-lg-5">
@@ -73,7 +73,7 @@
         <!---->
         <ol class="breadcrumb editContent">
             <li class="breadcrumb-item">
-                <a href="index.html" class="editContent">Home</a>
+                <a href="movies.html" class="editContent">Home</a>
             </li>
             <li class="breadcrumb-item active editContent">Single Page</li>
         </ol>
@@ -207,7 +207,7 @@
                             <h3 class="sear-head editContent">Последние добавленные</h3>
                             <div class="special-sec1 row mt-3 editContent">
                                 <div class="img-deals col-md-4">
-                                    <img src="bundles/images/s4.jpg" class="img-fluid" alt="">
+                                    <img src="static/images/s4.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="img-deal1 col-md-4">
                                     <h3 class="editContent">Рэмбо: Последняя кровь</h3>
@@ -217,7 +217,7 @@
                             </div>
                             <div class="special-sec1 row mt-3 editContent" >
                                 <div class="img-deals col-md-4">
-                                    <img src="bundles/images/s2.jpg" class="img-fluid" alt="" >
+                                    <img src="static/images/s2.jpg" class="img-fluid" alt="" >
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >Холодное сердце 2</h3>
@@ -227,7 +227,7 @@
                             </div>
                             <div class="special-sec1 row mt-3 editContent" >
                                 <div class="img-deals col-md-4">
-                                    <img src="bundles/images/s1.jpg" class="img-fluid" alt="" >
+                                    <img src="static/images/s1.jpg" class="img-fluid" alt="" >
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >К звездам</h3>
@@ -237,7 +237,7 @@
                             </div>
                             <div class="special-sec1 row mt-3 editContent" >
                                 <div class="img-deals col-md-4">
-                                    <img src="bundles/images/s5.jpg" class="img-fluid" alt="" >
+                                    <img src="static/images/s5.jpg" class="img-fluid" alt="" >
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >Терминатор: Темные судьбы</h3>
@@ -247,7 +247,7 @@
                             </div>
                             <div class="special-sec1 row mt-3 editContent" >
                                 <div class="img-deals col-md-4">
-                                    <img src="bundles/images/s3.jpg" class="img-fluid" alt="" >
+                                    <img src="static/images/s3.jpg" class="img-fluid" alt="" >
                                 </div>
                                 <div class="img-deal1 col-md-8">
                                     <h3 class="editContent" >Джокер</h3>
@@ -271,7 +271,7 @@
                                     </div>
                                     <div class="item-info-product">
                                         <h4 class="">
-                                            <a href="moviesingle.html" class="editContent" >{{ i.title }}</a>
+                                            <a href="{{ i.get_absolute_url }}" class="editContent" >{{ i.title }}</a>
                                         </h4>
 
                                         <div class="product_price">
@@ -279,6 +279,7 @@
                                                 <span class="money editContent" >{{ i.tagline }}</span>
                                             </div>
                                         </div>
+
                                         <ul class="stars">
                                             <li><a href="#"><span class="fa fa-star" aria-hidden="true" ></span></a></li>
                                             <li><a href="#"><span class="fa fa-star" aria-hidden="true" ></span></a></li>
@@ -421,7 +422,7 @@
                         <a href="https://djangochannel.com"> DJANGO SCHOOL.</a>
                     </p>
                     <!-- move top icon -->
-                    <a href="#home" class="move-top text-right col-md-2"><span class="fa fa-long-arrow-up" aria-hidden="true" ></span></a>
+                    <a href="movies.html" class="move-top text-right col-md-2"><span class="fa fa-long-arrow-up" aria-hidden="true" ></span></a>
                     <!-- //move top icon -->
                 </div>
             </div>
