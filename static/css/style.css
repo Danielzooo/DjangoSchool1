@@ -832,6 +832,10 @@ li.breadcrumb-item a {
 .img-deals img {
     border: 1px solid #ddd;
 }
+.img-short {
+    max-width: 250px;
+    height: auto;
+}
 
 ul.w3layouts-box-list li {
     list-style: none;
