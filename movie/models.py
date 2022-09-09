@@ -116,7 +116,7 @@ class Reviews(models.Model):
     text = models.TextField("Сообщение", max_length=5000)
     parent = models.ForeignKey('self', verbose_name='Родитель',
                                on_delete=models.SET_NULL, blank=True, null=True)
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, verbose_name='фильм')
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, verbose_name='фильм', related_name='reviews')
 
     def __str__(self):
         return f'{self.name} - {self.movie}'

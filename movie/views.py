@@ -4,6 +4,7 @@ from django.views.generic import ListView
 from .models import Movie
 from .forms import ReviewForm
 
+
 class MoviesView(ListView):
     model = Movie
     queryset = Movie.objects.filter(draft=False)
