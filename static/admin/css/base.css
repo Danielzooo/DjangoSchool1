@@ -459,7 +459,7 @@ input[type=number], input[type=tel], textarea, select, .vTextField {
     border-radius: 4px;
     padding: 5px 6px;
     margin-top: 0;
-    color: var(--body-fg);
+    color: black;
     background-color: var(--body-bg);
 }
 
