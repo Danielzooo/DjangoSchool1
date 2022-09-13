@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-{% load movie_tag %}
 {% load static %}
+{% load movie_tag %}
 <html lang="ru">
 <head>
     <!-- //Meta tag Keywords -->
@@ -47,6 +47,7 @@
                                 <a href="#">Категории <span class="fa fa-angle-down" aria-hidden="true"></span></a>
                                 <input type="checkbox" id="drop-2">
                                 <ul>
+
                                     {% get_categories as categories %}
                                     {% for category in categories %}
                                             <li><a href="/">{{ category.name }}</a></li>
