@@ -1,10 +1,10 @@
 {% extends 'html/layout.html' %}
 {% load static %}
-{% block title %}Главная страница{% endblock %}
+{% block title %}Актёр{% endblock %}
 
 {% block banner %}
 <div class="main-banner bg bg1" id="home" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image:
-  url('../static/images/banner.jpg');">
+  url({% static 'images/banner.jpg' %});">
 {% endblock %}
 
 {% block content %}
